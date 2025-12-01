@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embelezamento Afro | Amanda Souza</title>
+    <link rel="shortcut icon" href="./Imgs/Design sem nome.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <div class="marca-site">Embelezamento Afro</div>
+        <div class="botao-mobile" onclick="toggleMenu()">☰</div>
+        <nav>
+            <ul id="lista-navegacao">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#cursos">Curso</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="agendar.html">Agendar</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="capa" id="inicio">
+        <div class="capa-conteudo">
+            <h1>Celebrando sua beleza natural</h1>
+            <p>Especialista em cabelos crespos, cacheados e a identidade que floresce em cada fio. O cuidado que você merece.</p>
+            <div class="grupo-botoes">
+                <a href="agendar.html" class="botao botao-primario">Agendar Horário</a>
+                <a href="#cursos" class="botao botao-primario">Conheça o Curso</a>
+            </div>
+        </div>
+        <div class="capa-imagem">
+            <img src="./Imgs/Amanda_roupa_marrom.jpg">
+        </div>
+    </section>
+
+    <section class="servicos" id="servicos">
+        <h2 class="titulo-secao">Nossos Serviços</h2>
+        
+        <div class="grid-servicos">
+            <div class="cartao-servico">
+                <div class="container-imagem">
+                    <img src="Imgs/Fechando_penteado.jpg">
+                </div>
+                <h3>Fechando penteado</h3>
+                <a href="servicos.html" class="botao-pequeno">Saiba mais</a>
+            </div>
+
+            <div class="cartao-servico">
+                <div class="container-imagem">
+                    <img src="Imgs/Combo_noivinha.jpg">
+                </div>
+                <h3>Combo noivinha</h3>
+                <a href="servicos.html" class="botao-pequeno">Saiba mais</a>
+            </div>
+
+            <div class="cartao-servico">
+                <div class="container-imagem">
+                    <img src="./Imgs/Aplique_baixo.jpg">
+                </div>
+                <h3>Aplique baixo</h3>
+                <a href="servicos.html" class="botao-pequeno">Saiba mais</a>
+            </div>
+
+            <div class="cartao-servico">
+                <div class="container-imagem">
+                    <img src="./Imgs/Trança_única_com.jpg">
+                </div>
+                <h3>Trança única com elementos</h3>
+                <a href="servicos.html" class="botao-pequeno">Saiba mais</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="cursos" id="cursos">
+        <h2 class="titulo-secao">Curso</h2>
+
+        <div class="grid-cursos">
+            <div class="curso-card">
+                <div class="curso-imagem">
+                    <img src="./Imgs/Amanda_segurando_postila.jpg">
+                </div>
+                <div class="curso-info">
+                    <h3>Corte e Estilo para Cabelos Afro</h3>
+                    <p>Aprenda técnicas práticas de corte, finalização e cuidado para cabelos crespos e cacheados. O curso aborda desde a preparação, escolha de linhas de corte, texturização e estilos clássicos até opções modernas de finalização com produto mínimo.</p>
+
+                    <ul>
+                        <li>Carga Horaria: 4 Dias | 10h ás 17h |</li>
+                        <li>Formato: Material didático, Certificado e todas aulas praticas em video</li>
+                    </ul>
+
+                    <div class="curso-botoes">
+                        <a href="TRANÇANDO DO ZERO - 2026.pdf" class="botao botao-primario" target="_blank">Saiba mais (PDF)</a>
+                        <a href="https://wa.me/5511999999999" class="botao botao-primario" target="_blank" rel="noopener">Fale no WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sobre" id="sobre">
+        <div class="sobre-imagem">
+            <img src="./Imgs/Amanda_sentada_notebook.jpg">
+        </div>
+        <div class="sobre-texto">
+            <h2>Sobre a Criadora</h2>
+            <p>Olá, eu sou <strong>Amanda Souza</strong>, fundadora da Embelezamento Afro. Sou uma profissional de artesanato capilar que transforma a autoestima de mulheres negras através do cuidado com o cabelo natural.</p>
+            <p>Meu propósito é valorizar nossa raiz, nossa estética e nossa história, oferecendo não apenas um serviço, mas uma experiência de reconexão.</p>
+            <a href="#" class="botao botao-primario sobre-cta">Conheça minha trajetória</a>
+        </div>
+    </section>
+
+    <footer id="contato">
+        <div class="conteudo-rodape">
+            <div class="coluna-rodape">
+                <h4>Contatos</h4>
+                <p>Email: contato@embelezamentoafro.com</p>
+                <p>Telefone: (11) 98788-4221</p>
+            </div>
+            <div class="coluna-rodape">
+                <h4>Endereço</h4>
+                <p>R. Casa do Trem, 14</p>
+                <p>São Paulo - SP</p>
+            </div>
+            <div class="coluna-rodape">
+                <h4>Redes Sociais</h4>
+                <p>@Studio_amanda.souza</p>
+            </div>
+        </div>
+        <div class="rodape-inferior">
+            &copy; 2025 Embelezamento Afro - Amanda Souza. Todos os direitos reservados.
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+
+    <script src="menu.js"></script>
+
+ <!-- Botão e área do VLibras -->
+<div vw class="enabled">
+  <div vw-access-button class="active"></div>
+  <div vw-plugin-wrapper>
+    <div class="vw-plugin-top-wrapper"></div>
+  </div>
+</div>
+
+<!-- Script do VLibras -->
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+<script>
+  new window.VLibras.Widget('https://vlibras.gov.br/app');
+</script>
+
+
+<!-- Botão lateral fixo -->
+<div id="btn-ouvir" aria-label="Ouvir página">
+  🔊
+</div>
+
+<!-- Botão parar leitura -->
+<div id="btn-parar" aria-label="Parar leitura">
+  ⏹️
+</div>
+
+<style>
+  /* Estilo do botão lateral */
+  #btn-ouvir, #btn-parar {
+    position: fixed;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background: #0077cc;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 24px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    z-index: 9999;
+  }
+
+  #btn-ouvir {
+    bottom: 100px; /* posição superior */
+  }
+
+  #btn-parar {
+    bottom: 40px; /* logo abaixo */
+    background: #cc0000;
+  }
+
+  #btn-ouvir:hover, #btn-parar:hover {
+    opacity: 0.8;
+  }
+</style>
+
+<script>
+  if ('speechSynthesis' in window) {
+    const btnOuvir = document.getElementById('btn-ouvir');
+    const btnParar = document.getElementById('btn-parar');
+    let utterance;
+
+    btnOuvir.addEventListener('click', () => {
+      speechSynthesis.cancel(); // cancela leitura anterior
+
+      const main = document.querySelector('main');
+      const texto = main ? main.innerText : document.body.innerText;
+
+      utterance = new SpeechSynthesisUtterance(texto);
+      utterance.lang = 'pt-BR';
+      utterance.rate = 1.0;
+      utterance.pitch = 1.0;
+
+      speechSynthesis.speak(utterance);
+    });
+
+    btnParar.addEventListener('click', () => {
+      speechSynthesis.cancel();
+    });
+  } else {
+    alert("Seu navegador não suporta leitura de texto (SpeechSynthesis).");
+  }
+</script>
+</body>
+</html>

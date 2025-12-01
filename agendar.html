@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agendar Horário | Embelezamento Afro</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Link para personalizar header -->
+  <link rel="stylesheet" href="agendar.css">
+  <link rel="shortcut icon" href="./Imgs/Design sem nome.png" type="image/x-icon">
+</head>
+
+<body>
+
+  <header>
+    <div class="marca-site">Embelezamento Afro</div>
+    <div class="botao-mobile" onclick="toggleMenu()">☰</div>
+    <nav>
+      <ul id="lista-navegacao">
+        <li><a href="index.html#inicio">Início</a></li>
+        <li><a href="index.html#servicos">Serviços</a></li>
+        <li><a href="index.html#cursos">Curso</a></li>
+        <li><a href="index.html#sobre">Sobre</a></li>
+        <li><a href="agendar.html">Agendar</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main-agenda">
+    <section class="container-agenda">
+      <form id="form-agendar" novalidate>
+        <h1>Agendar Atendimento</h1>
+
+        <div class="campo">
+          <input id="nome" name="nome" type="text" placeholder=" " required />
+          <label for="nome">Nome</label>
+        </div>
+
+        <div class="campo">
+          <input id="email" name="email" type="email" placeholder=" " required />
+          <label for="email">E-mail</label>
+        </div>
+
+        <div class="campo">
+          <input id="telefone" name="telefone" type="tel" inputmode="numeric" placeholder=" " required />
+          <label for="telefone">Telefone (somente números)</label>
+          <small class="erro" aria-live="polite"></small>
+        </div>
+
+        <div class="campo">
+          <input id="data" name="data" type="date" placeholder=" " required />
+          <label for="data">Data</label>
+        </div>
+
+        <div class="campo campo-select">
+          <select id="horario" name="horario" required>
+            <option value="" disabled selected>Escolha um horário</option>
+            <!-- Opções de 30 em 30 minutos entre 08:00 e 18:00 -->
+            <option value="08:00">08:00</option>
+            <option value="08:30">08:30</option>
+            <option value="09:00">09:00</option>
+            <option value="09:30">09:30</option>
+            <option value="10:00">10:00</option>
+            <option value="10:30">10:30</option>
+            <option value="11:00">11:00</option>
+            <option value="11:30">11:30</option>
+            <option value="12:00">12:00</option>
+            <option value="12:30">12:30</option>
+            <option value="13:00">13:00</option>
+            <option value="13:30">13:30</option>
+            <option value="14:00">14:00</option>
+            <option value="14:30">14:30</option>
+            <option value="15:00">15:00</option>
+            <option value="15:30">15:30</option>
+            <option value="16:00">16:00</option>
+            <option value="16:30">16:30</option>
+            <option value="17:00">17:00</option>
+            <option value="17:30">17:30</option>
+            <option value="18:00">18:00</option>
+          </select>
+          <label for="horario">Horário (08:00–18:00)</label>
+        </div>
+
+        <div class="campo campo-select">
+          <select id="selecao" name="selecao" required>
+            <option value="" disabled selected>Escolha uma opção</option>
+            <option value="Tranças Afro">Tranças Afro</option>
+            <option value="Goivo">Goivo</option>
+            <option value="Crochet Braids">Crochet Braids</option>
+            <option value="Barrel Twist">Barrel Twist</option>
+            <option value="Penteado Social">Penteado Social</option>
+            <option value="Finalização">Finalização</option>
+            <option value="Alongamento">Alongamento</option>
+            <option value="Manutenção">Manutenção</option>
+            <option value="Hidratação Profunda">Hidratação Profunda</option>
+            <option value="Coloração Natural">Coloração Natural</option>
+            <option value="Corte Especial">Corte Especial</option>
+            <option value="Tranças Box">Tranças Box</option>
+            <option value="Dreadlocks">Dreadlocks</option>
+            <option value="Penteados Afro">Penteados Afro</option>
+            <option value="Relaxamento Natural">Relaxamento Natural</option>
+            <option value="Alongamento com Fita">Alongamento com Fita</option>
+            <option value="Transição Capilar">Transição Capilar</option>
+            <option value="Tratamento Reconstrutor">Tratamento Reconstrutor</option>
+            <option value="Escova Definida">Escova Definida</option>
+            <option value="Configuração de Estilos">Configuração de Estilos</option>
+          </select>
+          <label for="selecao">Seleção</label>
+        </div>
+        <div id="efetuado"></div>
+        <button type="submit" class="botao botao-primario efetuacao">Agendar</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="agendar.js"></script>
+  <!-- Botão e área do VLibras -->
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+
+  <!-- Script do VLibras -->
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+
+
+  <!-- Botão lateral fixo -->
+  <div id="btn-ouvir" aria-label="Ouvir página">
+    🔊
+  </div>
+
+  <!-- Botão parar leitura -->
+  <div id="btn-parar" aria-label="Parar leitura">
+    ⏹️
+  </div>
+
+  <style>
+    /* Estilo do botão lateral */
+    #btn-ouvir,
+    #btn-parar {
+      position: fixed;
+      right: 20px;
+      width: 50px;
+      height: 50px;
+      background: #0077cc;
+      color: #fff;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      font-size: 24px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+      z-index: 9999;
+    }
+
+    #btn-ouvir {
+      bottom: 100px;
+      /* posição superior */
+    }
+
+    #btn-parar {
+      bottom: 40px;
+      /* logo abaixo */
+      background: #cc0000;
+    }
+
+    #btn-ouvir:hover,
+    #btn-parar:hover {
+      opacity: 0.8;
+    }
+  </style>
+
+  <script>
+    if ('speechSynthesis' in window) {
+      const btnOuvir = document.getElementById('btn-ouvir');
+      const btnParar = document.getElementById('btn-parar');
+      let utterance;
+
+      btnOuvir.addEventListener('click', () => {
+        speechSynthesis.cancel(); // cancela leitura anterior
+
+        const main = document.querySelector('main');
+        const texto = main ? main.innerText : document.body.innerText;
+
+        utterance = new SpeechSynthesisUtterance(texto);
+        utterance.lang = 'pt-BR';
+        utterance.rate = 1.0;
+        utterance.pitch = 1.0;
+
+        speechSynthesis.speak(utterance);
+      });
+
+      btnParar.addEventListener('click', () => {
+        speechSynthesis.cancel();
+      });
+    } else {
+      alert("Seu navegador não suporta leitura de texto (SpeechSynthesis).");
+    }
+  </script>
+</body>
+
+</html>
