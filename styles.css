@@ -85,6 +85,7 @@ header {
 nav ul {
     display: flex;
     gap: 2rem;
+    align-items: center;
 }
 
 nav a {

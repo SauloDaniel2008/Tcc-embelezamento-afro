@@ -1,0 +1,38 @@
+body {
+    font-family: var(--font-corpo);
+    color: var(--burnt-umber);
+    background-color: var(--sandy-beige);
+    line-height: 1.6;
+    overflow-x: hidden;
+    /* Evita rolagem lateral indesejada */
+}
+#capa-sobre{
+    margin-top: 80px;
+}
+#sobre-titulo {
+    text-align: center;
+    margin-bottom: 40px;
+}
+#botoes-sobre {
+    display: flexbox;
+    margin-bottom: 40px;
+    margin-left: 100px;
+}
+.botao-sobre-texto{
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--pale-peach);
+    color: black;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 10px;
+    width: 250px;
+    height: 70px;
+}
+.botao-sobre-texto:hover {
+    background-color: var(--rose-clay);
+    color: white;
+}
