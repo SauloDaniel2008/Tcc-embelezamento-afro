@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="shortcut icon"
+      href="./Imgs/Design sem nome.png"
+      type="image/x-icon"
+    />
+    <title>Embelezamento Afro</title>
+  </head>
+  <body>
+    <header>
+      <div class="marca-site">Embelezamento Afro</div>
+      <div class="botao-mobile" onclick="toggleMenu()">☰</div>
+      <nav>
+        <ul id="lista-navegacao">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="servicos.html">Serviços</a></li>
+          <li><a href="#cursos">Curso</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="agendar.html">Agendar</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <h1>História pessoal</h1>
+    <p>
+      Meu nome é Amanda Souza, tenho 24 anos, e minha história na beleza começou
+      aos 14 anos, quando fiz meu primeiro curso de penteados afros em uma ONG
+      junto com a minha mãe, que já trabalhava na área. Meu pai montou um
+      pequeno salão na garagem de casa, onde começamos a atender juntas. Com
+      pouquíssima divulgação, eu mesma acabei me tornando minha própria
+      propaganda: fazia meu cabelo, as pessoas viam e começaram a pedir
+      atendimento. Quando os atendimentos começaram a melhorar minimamente, a
+      saúde da minha mãe piorou devido ao câncer de mama. Ela iniciou o último
+      tratamento e, por ser um período difícil, deixei o salão e fui trabalhar
+      como CLT, onde permaneci por seis meses. Uma semana depois de sair da
+      empresa, minha mãe faleceu, no dia 06/08/2019, aos 37 anos, no mesmo mês
+      em que completei 18. Logo em seguida veio a pandemia, e eu precisei
+      recomeçar do zero.
+    </p>
+
+    <h1>História profissional</h1>
+    <p>
+      Em meio à pandemia, criei meu perfil profissional no Instagram e comecei a
+      postar vídeos me arrumando e fazendo meu cabelo. Esse conteúdo me ajudou a
+      alcançar um público que me acompanhou durante todo o período de
+      isolamento. Quando pudemos retomar as atividades, reabri o salão na
+      garagem de casa, onde voltei a atender e também a ministrar cursos. Em
+      pouco tempo, o espaço ficou pequeno diante da demanda crescente. Com a
+      ajuda do meu pai, em novembro de 2021 abri meu salão atual, maior e de
+      frente para a rua, ainda na mesma localização. Nessa fase, minha irmã Ana
+      Paula começou a trabalhar comigo, organizando os agendamentos. Ganhei
+      destaque na internet pelos resultados do meu trabalho com tranças e usei
+      as redes sociais como ferramenta principal de divulgação dos meus
+      atendimentos e cursos. Em 2025, meu negócio viveu seu maior crescimento.
+      Meu marido, Luciano, entrou para o time para expandir os cursos no
+      digital. Passei a oferecer cursos online, mantendo também os presenciais,
+      que hoje representam a maior parte do faturamento. Mesmo com o sucesso dos
+      cursos, continuo realizando atendimentos, pois acredito que eles reforçam
+      minha autoridade como educadora. Atualmente, atuamos em equipe: eu na
+      estratégia, atendimentos e marketing; minha irmã na gestão de atendimentos
+      e cursos presenciais; e meu marido na parte digital, cuidando de páginas
+      de vendas e tráfego dos cursos online.
+    </p>
+
+    <h1>Prêmio</h1>
+    <p>
+      Em 2024, participei de um desafio na Record, cujo prêmio era de R$ 10 mil.
+      Fui a vencedora e utilizei todo o valor para abrir minha sala de cursos, o
+      que contribuiu diretamente para a expansão e profissionalização ainda
+      maior do meu trabalho.
+    </p>
+
+    <footer id="contato">
+      <div class="conteudo-rodape">
+        <div class="coluna-rodape">
+          <h4>Contatos</h4>
+          <p>Email: contato@embelezamentoafro.com</p>
+          <p>Telefone: (11) 98788-4221</p>
+        </div>
+        <div class="coluna-rodape">
+          <h4>Endereço</h4>
+          <p>R. Casa do Trem, 14</p>
+          <p>São Paulo - SP</p>
+        </div>
+        <div class="coluna-rodape">
+          <h4>Redes Sociais</h4>
+          <p>@Studio_amanda.souza</p>
+        </div>
+      </div>
+      <div class="rodape-inferior">
+        &copy; 2025 Embelezamento Afro - Amanda Souza. Todos os direitos
+        reservados.
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+
+    <script src="menu.js"></script>
+
+    <!-- Botão e área do VLibras -->
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
+    </div>
+
+    <!-- Script do VLibras -->
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget("https://vlibras.gov.br/app");
+    </script>
+
+    <!-- Botão lateral fixo -->
+    <div id="btn-ouvir" aria-label="Ouvir página">🔊</div>
+
+    <!-- Botão parar leitura -->
+    <div id="btn-parar" aria-label="Parar leitura">⏹️</div>
+
+    <style>
+      /* Estilo do botão lateral */
+      #btn-ouvir,
+      #btn-parar {
+        position: fixed;
+        right: 20px;
+        width: 50px;
+        height: 50px;
+        background: #0077cc;
+        color: #fff;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        font-size: 24px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+        z-index: 9999;
+      }
+
+      #btn-ouvir {
+        bottom: 100px; /* posição superior */
+      }
+
+      #btn-parar {
+        bottom: 40px; /* logo abaixo */
+        background: #cc0000;
+      }
+
+      #btn-ouvir:hover,
+      #btn-parar:hover {
+        opacity: 0.8;
+      }
+    </style>
+    <script>
+      if ("speechSynthesis" in window) {
+        const btnOuvir = document.getElementById("btn-ouvir");
+        const btnParar = document.getElementById("btn-parar");
+        let utterance;
+
+        btnOuvir.addEventListener("click", () => {
+          speechSynthesis.cancel(); // cancela leitura anterior
+
+          const main = document.querySelector("main");
+          const texto = main ? main.innerText : document.body.innerText;
+
+          utterance = new SpeechSynthesisUtterance(texto);
+          utterance.lang = "pt-BR";
+          utterance.rate = 1.0;
+          utterance.pitch = 1.0;
+
+          speechSynthesis.speak(utterance);
+        });
+
+        btnParar.addEventListener("click", () => {
+          speechSynthesis.cancel();
+        });
+      } else {
+        alert("Seu navegador não suporta leitura de texto (SpeechSynthesis).");
+      }
+    </script>
+  </body>
+</html>
