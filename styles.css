@@ -2,7 +2,7 @@
    Fonts e cores
    ========================================= */
 :root {
-    /* Paleta de Cores Solicitada */
+    /* Paleta de Cores */
     --rose-clay: #CD7479;
     --pale-peach: #F3C6BB;
     --burnt-umber: #8F5943;
@@ -68,6 +68,10 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.logo_insta {
+    padding: 100px;
+    margin: 100px;
 }
 
 .marca-site {
@@ -451,6 +455,11 @@ footer {
     }
 
     .grupo-botoes {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .curso-botoes {
         justify-content: center;
         flex-direction: column;
     }
