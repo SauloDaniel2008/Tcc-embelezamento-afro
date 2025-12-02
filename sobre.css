@@ -16,13 +16,15 @@ body {
 #botoes-sobre {
     display: flexbox;
     margin-bottom: 40px;
-    margin-left: 340px;
-    height: 530px;
+    justify-content: initial;
+    margin-left: 15vh;
+    height: 600px;
     background-color: burlywood;
     padding-top: 150px;
     border-radius: 5vh;
     border-top-right-radius: 0%;
     border-bottom-right-radius: 0%;
+    
 
 }
 .botao-sobre-texto{
@@ -46,21 +48,23 @@ body {
 #container{
     display: flex;
     height: 56.5vh;
+    margin-bottom: 36vh;
 }
 #div-paragrafo-sobre{
     width: 100vh;
     display: flex;
     justify-content: center;
-    height: 530px;
+    height: 600px;
     border-radius: 5vh;
     border-top-left-radius: 0%;
     border-bottom-left-radius: 0%;
     background-color: var(--rose-clay);
     color: white;
     font-size: 20px;
+    width: 150vh;
 }
 #paragrafoSobre{
-    padding: 125px 20px 10px 40px;
+    padding: 55px 20px 10px 40px;
 }
 /* Estilo para destacar o botão ativo */
 .botao-sobre-texto.active {
