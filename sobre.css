@@ -16,7 +16,14 @@ body {
 #botoes-sobre {
     display: flexbox;
     margin-bottom: 40px;
-    margin-left: 100px;
+    margin-left: 340px;
+    height: 530px;
+    background-color: burlywood;
+    padding-top: 150px;
+    border-radius: 5vh;
+    border-top-right-radius: 0%;
+    border-bottom-right-radius: 0%;
+
 }
 .botao-sobre-texto{
     font-size: 1.2rem;
@@ -36,11 +43,85 @@ body {
     background-color: var(--rose-clay);
     color: white;
 }
-
+#container{
+    display: flex;
+    height: 56.5vh;
+}
+#div-paragrafo-sobre{
+    width: 100vh;
+    display: flex;
+    justify-content: center;
+    height: 530px;
+    border-radius: 5vh;
+    border-top-left-radius: 0%;
+    border-bottom-left-radius: 0%;
+    background-color: var(--rose-clay);
+    color: white;
+    font-size: 20px;
+}
+#paragrafoSobre{
+    padding: 125px 20px 10px 40px;
+}
 /* Estilo para destacar o botão ativo */
 .botao-sobre-texto.active {
     background-color: #f0e68c; /* Cor Amarela do destaque */
     border: 1px solid #ffd700;
     font-weight: bold;
     color: #333; /* Cor do texto mais escura para contraste */
+}
+
+/* Responsividade*/
+@media (max-width: 1000px) {
+    
+}
+
+@media (max-width: 700px) {
+   
+}
+
+@media (max-width: 420px) {
+    #botoes-sobre {
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;
+    margin: 0%;
+    height: 0%;
+    background-color: burlywood;
+    padding-top: 0;
+    border-radius: 0;
+    border-top-right-radius: 0%;
+    border-bottom-right-radius: 0%;
+
+}
+.botao-sobre-texto{
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--pale-peach);
+    color: black;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 10px;
+    width: auto;
+    height: 70px;
+}
+#div-paragrafo-sobre{
+    width: 100vh;
+    flex-direction: column; /* tudo empilhado por padrão */
+    align-items: center;
+    gap: 10px;
+    height: 10px;
+    border-radius: 5vh;
+    border-top-left-radius: 0%;
+    border-bottom-left-radius: 0%;
+    background-color: var(--rose-clay);
+    color: white;
+    font-size: 10px;
+    padding: 0;
+}
+#paragrafoSobre{
+    padding: 125px 20px 10px 40px;
+}
 }
